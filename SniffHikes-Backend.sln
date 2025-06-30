@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36221.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SniffHikes-Backend.Api", "SniffHikes-Backend.Api\SniffHikes-Backend.Api.csproj", "{9A5931B2-F95A-45B8-ACA8-2FA71E5C2C72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A5931B2-F95A-45B8-ACA8-2FA71E5C2C72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A5931B2-F95A-45B8-ACA8-2FA71E5C2C72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A5931B2-F95A-45B8-ACA8-2FA71E5C2C72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A5931B2-F95A-45B8-ACA8-2FA71E5C2C72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {157966B1-49E4-4742-9685-1974C61FCA65}
+	EndGlobalSection
+EndGlobal
