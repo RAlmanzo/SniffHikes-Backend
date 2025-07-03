@@ -14,4 +14,8 @@
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SniffHikes-Backend.Core\SniffHikes-Backend.Core.csproj" />
+  </ItemGroup>
+
 </Project>
