@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SniffHikes_Backend.Core.Entities
 {
-    public class BaseEntity
+    public abstract class BaseEntity
     {
         public string Id { get; set; }
     }
