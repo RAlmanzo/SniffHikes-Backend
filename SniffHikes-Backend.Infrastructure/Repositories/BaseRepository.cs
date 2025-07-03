@@ -11,14 +11,17 @@ namespace SniffHikes_Backend.Infrastructure.Repositories
 {
     public class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
     {
+        private readonly FirebaseDbContext _context;
+        private readonly string _collectionTarget;
         public BaseRepository(FirebaseDbContext context)
         {
-            string collectionTarget = typeof(T).Name + "s";
+            _collectionTarget = typeof(T).Name + "s";
+            _context = context;
         }
 
-        public Task<T> GetByIdAsync(string id)
+        public async Task<T> GetByIdAsync(string id)
         {
-            throw new NotImplementedException();
+            return await _context.Client.Child(_collectionTarget).OnceSingleAsync<T>();
         }
 
         public Task<IEnumerable<T>> GetAllAsync()
