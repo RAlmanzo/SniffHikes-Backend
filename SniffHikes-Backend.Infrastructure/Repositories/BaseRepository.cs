@@ -24,9 +24,16 @@ namespace SniffHikes_Backend.Infrastructure.Repositories
             return await _context.Client.Child(_collectionTarget).OnceSingleAsync<T>();
         }
 
-        public Task<IEnumerable<T>> GetAllAsync()
+        public async Task<IEnumerable<T>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            var items = await _context.Client.Child(_collectionTarget).OnceAsync<T>();
+
+            return items.Select(x => 
+            {
+                var entity = x.Object;
+                entity.Id = x.Key;
+                return entity;
+            });
         }
 
         public Task CreateAsync(T toCreate)
