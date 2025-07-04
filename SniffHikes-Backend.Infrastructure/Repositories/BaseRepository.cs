@@ -1,11 +1,18 @@
-﻿using SniffHikes_Backend.Core.Entities;
+﻿using Firebase.Auth;
+using Firebase.Auth.Repository;
+using Firebase.Database.Query;
+using Microsoft.Extensions.Logging;
+using SniffHikes_Backend.Core.Entities;
 using SniffHikes_Backend.Core.Interfaces.Repositories;
 using SniffHikes_Backend.Infrastructure.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace SniffHikes_Backend.Infrastructure.Repositories
 {
@@ -36,9 +43,9 @@ namespace SniffHikes_Backend.Infrastructure.Repositories
             });
         }
 
-        public Task CreateAsync(T toCreate)
+        public async Task CreateAsync(T toCreate)
         {
-            throw new NotImplementedException();
+            await _context.Client.Child(_collectionTarget).PostAsync(toCreate);
         }
 
         public Task UpdateAsync(T toUpdate)
