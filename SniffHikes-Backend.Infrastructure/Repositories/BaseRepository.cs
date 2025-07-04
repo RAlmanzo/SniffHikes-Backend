@@ -53,9 +53,9 @@ namespace SniffHikes_Backend.Infrastructure.Repositories
             await _context.Client.Child(_collectionTarget).Child(toUpdate.Id).PutAsync(toUpdate);
         }
 
-        public Task DeleteAsync(string id)
+        public async Task DeleteAsync(string id)
         {
-            throw new NotImplementedException();
+            await _context.Client.Child(id).DeleteAsync();
         }
     }
 }
