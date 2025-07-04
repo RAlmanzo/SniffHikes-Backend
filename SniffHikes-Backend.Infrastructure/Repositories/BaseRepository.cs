@@ -1,18 +1,7 @@
-﻿using Firebase.Auth;
-using Firebase.Auth.Repository;
-using Firebase.Database.Query;
-using Microsoft.Extensions.Logging;
+﻿using Firebase.Database.Query;
 using SniffHikes_Backend.Core.Entities;
 using SniffHikes_Backend.Core.Interfaces.Repositories;
 using SniffHikes_Backend.Infrastructure.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Security.Claims;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace SniffHikes_Backend.Infrastructure.Repositories
 {
