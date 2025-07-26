@@ -110,7 +110,7 @@ This project includes a GitHub Actions workflow to automatically:
 
 - Build the backend on every push or pull request to main or dev
 
-**To be added later**
+**To be added later:**
 
 - Run future unit tests to ensure code stability
 
@@ -145,7 +145,7 @@ Visit: https://localhost:5001/graphql or http://localhost:5000/graphql
 
 ---
 
-### 📈 Future Roadmap
+## 📈 Future Roadmap
 
  - Complete GraphQL CRUD operations for events, users, routes, comments
 
@@ -158,3 +158,14 @@ Visit: https://localhost:5001/graphql or http://localhost:5000/graphql
  - Migrate mobile app to .NET MAUI and connect it to this backend
 
  - Deploy to cloud hosting (e.g., Render, Azure)
+
+---
+
+## 📬 Contact
+Want to connect or ask questions?
+
+📧 Email: ralmanzo@gmail.com
+
+💼 LinkedIn: https://www.linkedin.com/in/rosseel-almanzo-5241172ba/
+
+🐙 GitHub: https://github.com/RAlmanzo
