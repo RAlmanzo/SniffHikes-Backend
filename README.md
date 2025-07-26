@@ -2,7 +2,7 @@
 
 A scalable and modular GraphQL backend API built for the SniffHikes Mobile App, targeting dog-friendly hiking events and community sharing.
 
-#### This backend is currently under active development and will serve as the foundation for the upcoming .NET MAUI mobile version of the SniffHikes app.
+**This backend is currently under active development and will serve as the foundation for the upcoming .NET MAUI mobile version of the SniffHikes app.**
 
 ---
 
@@ -20,38 +20,39 @@ It replaces the original backend logic and is designed specifically to support t
 
 Follows Clean Architecture / Onion Architecture with the following layers:
 
-📦 SniffHikes.Backend/
+📦 SniffHikes-Backend/
 
-├── 📁 SniffHikes.API             --> GraphQL endpoints (HotChocolate)
+├── 📁 SniffHikes-Backend.API             --> GraphQL endpoints (HotChocolate)
 
-├── 📁 SniffHikes.Core            --> Domain models, interfaces, business logic
+├── 📁 SniffHikes-Backend.Core            --> Domain models, interfaces, business logic
 
-├── 📁 SniffHikes.Infrastructure --> Firebase integration, repositories, services
+├── 📁 SniffHikes-Backend.Infrastructure --> Firebase integration, repositories, services
 
-├── 📁 SniffHikes.Tests           --> Unit tests (planned with xUnit + mocking)
+├── 📁 SniffHikes-Backend.Tests           --> Unit tests (planned with xUnit + mocking)
 
 ---
 
 ## 🚀 Tech Stack
 
 ### ✅ Core Technologies
-.NET 8
 
-GraphQL with HotChocolate
+- .NET 8
 
-Firebase:
+- GraphQL with HotChocolate
 
-- Realtime Database (for user data, events, comments, routes, etc.)
+- Firebase:
 
-- Firebase Storage (for images and assets)
+ -- Realtime Database (for user data, events, comments, routes, etc.)
 
-- Firebase Authentication (OAuth, email/password)
+ -- Firebase Storage (for images and assets)
 
-- JWT Tokens for secured API access
+ -- Firebase Authentication (OAuth, email/password)
 
-- GitHub Actions for CI/CD pipeline
+ -- JWT Tokens for secured API access
 
-- Unit Testing with xUnit & Moq (planned)
+ -- GitHub Actions for CI/CD pipeline
+
+ -- Unit Testing with xUnit & Moq (planned)
 
 ---
 
@@ -87,46 +88,33 @@ Future implementation of role-based policies for admin features.
 
 ## 🧠 What I’m Learning
 
-Structuring scalable backends using Clean Architecture
+- Structuring scalable backends using Clean Architecture
 
-Working with GraphQL APIs in .NET
+- Working with GraphQL APIs in .NET
 
-Integrating with Firebase services in a .NET environment
+- Integrating with Firebase services in a .NET environment
 
-Setting up secure authentication flows using Firebase Auth and JWT
+- Setting up secure authentication flows using Firebase Auth and JWT
 
-Writing unit tests for services using xUnit and mocking
+- Writing unit tests for services using xUnit and mocking
 
-Creating CI/CD pipelines with GitHub Actions
+- Creating CI/CD pipelines with GitHub Actions
 
-Preparing for mobile-first architecture using .NET MAUI
+- Preparing for mobile-first architecture using .NET MAUI
 
 ---
 
 ### ⚙️ GitHub Actions
+
 This project includes a GitHub Actions workflow to automatically:
 
-Build the backend on every push or pull request to main or dev
+- Build the backend on every push or pull request to main or dev
 
-### To be added later
+**To be added later**
 
-Run future unit tests to ensure code stability
+- Run future unit tests to ensure code stability
 
-Optionally deploy
-
----
-
-## 📂 Folder Overview
-
-📁 SniffHikes.Backend
-
-├── SniffHikes.API/             → GraphQL API
-
-├── SniffHikes.Core/            → Domain Models, Interfaces, Logic
-
-├── SniffHikes.Infrastructure/  → Firebase Services, Repositories
-
-├── SniffHikes.Tests/           → Unit Tests (Coming Soon)
+ -Auto deploy on push and pull-request to main(production) branch
 
 ---
 
@@ -134,23 +122,24 @@ Optionally deploy
 
 ### Prerequisites
 
-.NET 8 SDK
+- .NET 8 SDK
 
-Firebase Project (Realtime DB, Auth, Storage)
+- Firebase Project (Realtime DB, Auth, Storage)
 
-Firebase Admin SDK Key (for server-side integration)
+- Firebase Admin SDK Key (for server-side integration)
 
-Install dependencies
-bash
-Kopiëren
-Bewerken
+- Install dependencies
+```Bash
 dotnet restore
-Run the API
-bash
-Kopiëren
-Bewerken
+```
+
+- Run the API
+```bash
 dotnet run --project SniffHikes.API
-GraphQL Playground
+```
+
+- GraphQL Playground
+
 Visit: https://localhost:5001/graphql or http://localhost:5000/graphql
 (depending on your HTTPS settings)
 
@@ -158,14 +147,14 @@ Visit: https://localhost:5001/graphql or http://localhost:5000/graphql
 
 ### 📈 Future Roadmap
 
- Complete GraphQL CRUD operations for events, users, routes, comments
+ - Complete GraphQL CRUD operations for events, users, routes, comments
 
- Add full JWT validation using Firebase Admin SDK
+ - Add full JWT validation using Firebase Admin SDK
 
- Implement file/image upload to Firebase Storage
+ - Implement file/image upload to Firebase Storage
 
- Add admin role management and restrictions
+ - Add admin role management and restrictions
 
- Migrate mobile app to .NET MAUI and connect it to this backend
+ - Migrate mobile app to .NET MAUI and connect it to this backend
 
- Deploy to cloud hosting (e.g., Render, Azure)
+ - Deploy to cloud hosting (e.g., Render, Azure)
