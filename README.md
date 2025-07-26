@@ -2,7 +2,6 @@
 
 A scalable and modular GraphQL backend API built for the SniffHikes Mobile App, targeting dog-friendly hiking events and community sharing.
 
-#### In Progress
 #### This backend is currently under active development and will serve as the foundation for the upcoming .NET MAUI mobile version of the SniffHikes app.
 
 ---
@@ -22,9 +21,13 @@ It replaces the original backend logic and is designed specifically to support t
 Follows Clean Architecture / Onion Architecture with the following layers:
 
 📦 SniffHikes.Backend/
+
 ├── 📁 SniffHikes.API             --> GraphQL endpoints (HotChocolate)
+
 ├── 📁 SniffHikes.Core            --> Domain models, interfaces, business logic
+
 ├── 📁 SniffHikes.Infrastructure --> Firebase integration, repositories, services
+
 ├── 📁 SniffHikes.Tests           --> Unit tests (planned with xUnit + mocking)
 
 ---
@@ -32,7 +35,7 @@ Follows Clean Architecture / Onion Architecture with the following layers:
 ## 🚀 Tech Stack
 
 ### ✅ Core Technologies
-.NET 8 Sdk
+.NET 8
 
 GraphQL with HotChocolate
 
@@ -116,15 +119,20 @@ Optionally deploy
 ## 📂 Folder Overview
 
 📁 SniffHikes.Backend
+
 ├── SniffHikes.API/             → GraphQL API
+
 ├── SniffHikes.Core/            → Domain Models, Interfaces, Logic
+
 ├── SniffHikes.Infrastructure/  → Firebase Services, Repositories
+
 ├── SniffHikes.Tests/           → Unit Tests (Coming Soon)
-🔧 Setup & Running
 
 ---
 
-## Prerequisites
+## 🔧 Setup & Running
+
+### Prerequisites
 
 .NET 8 SDK
 
