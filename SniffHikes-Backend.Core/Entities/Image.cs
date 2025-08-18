@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 
 namespace SniffHikes_Backend.Core.Entities
 {
-    public class Image
+    public class Image : BaseEntity
     {
         public required string FileName { get; set; }
-        public int? RouteId { get; set; }
-        public int? EventId { get; set; }
+        public string? RouteId { get; set; }
+        public string? EventId { get; set; }
+        public string? ZoneId { get; set; }
     }
 }
