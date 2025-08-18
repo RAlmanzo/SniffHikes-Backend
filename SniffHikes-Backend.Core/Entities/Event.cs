@@ -11,15 +11,15 @@ namespace SniffHikes_Backend.Core.Entities
 {
     public class Event : BaseEntity
     {
-        public string Title { get; set; }
-        public string Description { get; set; }
+        public required string Title { get; set; }
+        public required string Description { get; set; }
         public decimal? Price { get; set; }
-        public int AddressId { get; set; }
-        public ICollection<string> ImageIds { get; set; }
+        public required string AddressId { get; set; }
+        public required ICollection<string> ImageIds { get; set; }
         public DateTime DateEvent { get; set; }
         public DateTime DateCreated { get; set; }
-        public ICollection<string> CommentIds { get; set; }
-        public string OrganizerId { get; set; }
-        public ICollection<string> AttendingUserIds { get; set; }
+        public ICollection<string>? CommentIds { get; set; }
+        public required string OrganizerId { get; set; }
+        public ICollection<string>? AttendingUserIds { get; set; }
     }
 }
