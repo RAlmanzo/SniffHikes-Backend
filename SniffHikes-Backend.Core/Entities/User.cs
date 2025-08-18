@@ -14,12 +14,13 @@ namespace SniffHikes_Backend.Core.Entities
         public DateTime DateOfBirth { get; set; }
         public required string Email { get; set; }
         public required string Gender { get; set; }
-        public required int AddressId { get; set; }
+        public required string AddressId { get; set; }
         public ICollection<string>? CommentIds { get; set; }
         public ICollection<string>? DogIds { get; set; }
         public ICollection<string>? RouteIds { get; set; }
+        public ICollection<string>? ZoneIds { get; set; }
         public ICollection<string>? OrganizedEventIds { get; set; }
         public ICollection<string>? AttendingEventIds { get; set; }
-        public required string Image { get; set; }
+        public required string ImageId { get; set; }
     }
 }
