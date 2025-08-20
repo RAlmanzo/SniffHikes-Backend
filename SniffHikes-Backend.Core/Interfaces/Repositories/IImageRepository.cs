@@ -13,5 +13,6 @@ namespace SniffHikes_Backend.Core.Interfaces.Repositories
         Task<IEnumerable<Image>> GetImagesByRouteIdAsync(string routeId);
         Task<IEnumerable<Image>> GetImagesByZoneIdAsync(string zoneId);
         Task<IEnumerable<Image>> GetImagesByUserIdAsync(string userId);
+        Task<IEnumerable<Image>> GetImagesByDogIdAsync(string dogId);
     }
 }
