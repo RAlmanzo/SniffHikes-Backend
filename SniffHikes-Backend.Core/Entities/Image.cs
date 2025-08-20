@@ -13,5 +13,7 @@ namespace SniffHikes_Backend.Core.Entities
         public string? RouteId { get; set; }
         public string? EventId { get; set; }
         public string? ZoneId { get; set; }
+        public required string UserId { get; set; }
+        public string? DogId { get; set; }
     }
 }
