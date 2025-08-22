@@ -9,11 +9,8 @@ using System.Threading.Tasks;
 
 namespace SniffHikes_Backend.Infrastructure.Repositories
 {
-    public class RouteRepository : BaseRepository<Route>, IRouteRepository
+    public class RouteRepository(FirebaseDbContext context) : BaseRepository<Route>(context), IRouteRepository
     {
-        public RouteRepository(FirebaseDbContext context) : base(context)
-        {
-        }
     }
 
 }
