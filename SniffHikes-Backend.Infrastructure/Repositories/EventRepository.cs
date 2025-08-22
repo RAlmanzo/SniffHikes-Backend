@@ -9,10 +9,7 @@ using System.Threading.Tasks;
 
 namespace SniffHikes_Backend.Infrastructure.Repositories
 {
-    public class EventRepository : BaseRepository<Event>, IEventRepository
+    public class EventRepository(FirebaseDbContext context) : BaseRepository<Event>(context), IEventRepository
     {
-        public EventRepository(FirebaseDbContext context) : base(context)
-        {
-        }
     }
 }
