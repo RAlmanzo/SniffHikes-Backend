@@ -9,10 +9,7 @@ using System.Threading.Tasks;
 
 namespace SniffHikes_Backend.Infrastructure.Repositories
 {
-    public class AddressRepository : BaseRepository<Address>, IAddressRepository
+    public class AddressRepository(FirebaseDbContext context) : BaseRepository<Address>(context), IAddressRepository
     {
-        public AddressRepository(FirebaseDbContext context) : base(context)
-        {
-        }
     }
 }
