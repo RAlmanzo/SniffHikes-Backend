@@ -9,10 +9,7 @@ using System.Threading.Tasks;
 
 namespace SniffHikes_Backend.Infrastructure.Repositories
 {
-    public class DogRepository : BaseRepository<Dog>, IDogRepository
+    public class DogRepository(FirebaseDbContext context) : BaseRepository<Dog>(context), IDogRepository
     {
-        public DogRepository(FirebaseDbContext context) : base(context)
-        {
-        }
     }
 }
