@@ -9,10 +9,7 @@ using System.Threading.Tasks;
 
 namespace SniffHikes_Backend.Infrastructure.Repositories
 {
-    public class CommentRepository : BaseRepository<Comment>, ICommentRepository
+    public class CommentRepository(FirebaseDbContext context) : BaseRepository<Comment>(context), ICommentRepository
     {
-        public CommentRepository(FirebaseDbContext context) : base(context)
-        {
-        }
     }
 }
