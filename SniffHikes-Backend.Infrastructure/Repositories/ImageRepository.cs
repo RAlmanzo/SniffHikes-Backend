@@ -9,12 +9,8 @@ using System.Threading.Tasks;
 
 namespace SniffHikes_Backend.Infrastructure.Repositories
 {
-    public class ImageRepository : BaseRepository<Image>, IImageRepository
+    public class ImageRepository(FirebaseDbContext context) : BaseRepository<Image>(context), IImageRepository
     {
-        public ImageRepository(FirebaseDbContext context) : base(context)
-        {
-        }
-
         public Task<IEnumerable<Image>> GetImagesByDogIdAsync(string dogId)
         {
             throw new NotImplementedException();
