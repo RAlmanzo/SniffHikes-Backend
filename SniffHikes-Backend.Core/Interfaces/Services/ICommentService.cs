@@ -13,6 +13,7 @@ namespace SniffHikes_Backend.Core.Interfaces.Services
         Task<bool> AddEventCommentAsync(Comment comment);
         Task<bool> DeleteEventCommentAsync(string commentId);
         Task<Comment> UpdateEventCommentAsync(Comment comment);
+        Task<IEnumerable<Comment>> GetAllRouteCommentsAsync(string routeId);
         Task<bool> AddRouteCommentAsync(Comment comment);
         Task<bool> DeleteRouteCommentAsync(string commentId);
         Task<Comment> UpdateRouteCommentAsync(Comment comment);
