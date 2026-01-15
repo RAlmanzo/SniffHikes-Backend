@@ -17,6 +17,7 @@ namespace SniffHikes_Backend.Core.Interfaces.Services
         Task<bool> AddRouteCommentAsync(Comment comment);
         Task<bool> DeleteRouteCommentAsync(string commentId);
         Task<Comment> UpdateRouteCommentAsync(Comment comment);
+        Task<IEnumerable<Comment>> GetAllZoneCommentsAsync(string zoneId);
         Task<bool> AddZoneCommentAsync(Comment comment);
         Task<bool> DeleteZoneCommentAsync(string commentId);
         Task<Comment> UpdateZoneCommentAsync(Comment comment);
