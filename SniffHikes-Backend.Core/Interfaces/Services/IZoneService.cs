@@ -14,8 +14,6 @@ namespace SniffHikes_Backend.Core.Interfaces.Services
         Task<string> CreateZoneAsync(Zone newZone);
         Task<bool> UpdateZoneAsync(Zone toUpdate);
         Task<string> DeleteZoneAsync(string id);
-        Task<bool> AddZoneCommentAsync(string id, Comment comment);
-        Task<bool> DeleteZoneCommentAsync(string id, string commentId);
         Task<List<Zone>> SearchZoneByCity(string cityName);
     }
 }

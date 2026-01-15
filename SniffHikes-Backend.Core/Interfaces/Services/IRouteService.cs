@@ -15,8 +15,6 @@ namespace SniffHikes_Backend.Core.Interfaces.Services
         Task<string> CreateRouteAsync(Route newRoute);
         Task<bool> UpdateRouteAsync(Route toUpdate);
         Task<string> DeleteRouteAsync(string id);
-        Task<bool> AddRouteCommentAsync(string id, Comment comment);
-        Task<bool> DeleteRouteCommentAsync(string id, string commentId);
         Task<List<Route>> SearchRouteByCity(string cityName);
     }
 }
