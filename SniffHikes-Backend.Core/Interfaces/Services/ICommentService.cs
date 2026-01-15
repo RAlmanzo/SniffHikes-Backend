@@ -9,6 +9,7 @@ namespace SniffHikes_Backend.Core.Interfaces.Services
 {
     public interface ICommentService
     {
+        Task<Comment> GetCommentByIdAsync(string commentId);
         Task<IEnumerable<Comment>> GetAllEventCommentsAsync(string eventId);
         Task<bool> AddEventCommentAsync(Comment comment);
         Task<bool> DeleteEventCommentAsync(string commentId);
